@@ -2,6 +2,8 @@ import java.util.*;
 public class BlackJack{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
+        TranpDeck deck = new TranpDeck();
+
         //自分の手札の枚数の合計
         int myhandSum = 0;
         
@@ -28,16 +30,6 @@ public class BlackJack{
         System.out.print("相手の手札: ");
         System.out.print(enemyhandSum +"枚目");
         
-        //自分の手札ドロー
-        System.out.print("自分の手札: ");
-        System.out.println("次のカードを引きますか？:");
-        System.out.println("カードを引く場合はyesをそのままの場合はnoを書いてください");
-        String drawCard = sc.next();
-        if(drawCard == "yes"){
-            //カードを引ける処理
-        }else if(drawCard == "no"){
-            //そのまま続行する処理
-        }
         //自分の１枚目の手札と２枚目以降のの手札の合計が21以上の場合バースト
         if(myValueSum > 21){
             System.out.print("バーストしました。ゲームを終了します");
