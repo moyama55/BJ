@@ -14,5 +14,6 @@ public class Draw {
         }else if(drawCard == "no"){
             //そのまま続行する処理
         }
+        aaa
     }
 }
