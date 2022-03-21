@@ -2,7 +2,6 @@ import java.util.*;
 
 public class Draw {
     public void draw(){
-    
     //自分の手札ドロー
     Scanner sc = new Scanner(System.in);
     System.out.print("自分の手札: ");
@@ -14,6 +13,5 @@ public class Draw {
         }else if(drawCard == "no"){
             //そのまま続行する処理
         }
-        aaa
     }
 }
