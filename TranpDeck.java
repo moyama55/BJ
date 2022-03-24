@@ -5,6 +5,7 @@ public class TranpDeck {
     private int[] decks = new int[51];
     private String[] marks = new String[3];
     private int count = 0;
+    private int mapCount = 0;
     public void deckMark(){
         //カードの絵柄決め
         for(int i = 0; i < 4; i++){
@@ -42,6 +43,15 @@ public class TranpDeck {
                 }
             }
         }
+    }
+    //数値と絵柄をmapでつなぐ
+    void mapDeck(){
+       for(int i = 0; i < 4; i++){
+        for(int j = 0; j < 13; j++){
+            prefs.put(marks[i],decks[mapCount]);
+            mapCount++;
+        }           
+       } 
     }
     public String[] getMarks(){
         return this.marks;
